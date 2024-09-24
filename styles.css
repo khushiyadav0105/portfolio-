@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(1, 1, 36);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(18, 18, 62);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, font-size 0.3s;
+}
+nav ul li a:hover {
+  color: rgb(153, 153, 226);
+  font-size: 1.02rem;
+}
+main hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 40px 50px; 
+}
+.left {
+  font-size: 1.5rem;
+}
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 130px 0;
+  align-items: center;
+}
+.firstsection > div {
+  width: 30%;
+}
+.left-section {
+  width: 34px;
+  font-size: 2rem;
+}
+.right-section {
+  width: 100%;
+}
+.right-section img {
+  width: 100%;
+  height: 100%;
+}
+.purple {
+  color: rgb(138, 44, 206);
+}
+.text-gray {
+  color: rgb(24, 21, 21);
+}
+#element {
+  color: rgb(138, 44, 226);
+}
+.aboutme, .projects, .contact {
+  max-width: 80vw;
+  margin: auto;
+}
+.aboutme h1, .projects h1, .contact h1 {
+  font-size: 1.9rem;
+}
+.aboutme h2 {
+  font-size: 1.5rem; 
+}
+.contact {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  color:rgb(14, 12, 12);
+}
+
+.contact p {
+  margin-bottom: 30px;
+  color: rgb(37, 30, 30);
+  font-size: 1.1rem;
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(31, 25, 25);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.social-links a i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.project {
+  background-color: rgb(2, 2, 56);
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s; 
+  width: 30%;
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+html {
+  scroll-behavior: smooth; 
+}
+
+
+@media (max-width: 768px) {
+  .firstsection {
+    flex-direction: column;
+    margin: 60px 0;
+  }
+  .firstsection > div {
+    width: 80%;
+    margin: 20px 0;
+  }
+  .project {
+    width: 90%; 
+  }
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .left {
+    font-size: 1.2rem; 
+  }
+  .firstsection .left-section {
+    font-size: 1.5rem;
+  }
+  .aboutme h1, .projects h1, .contact h1 {
+    font-size: 1.6rem; /
+  }
+}
